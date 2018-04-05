@@ -10,8 +10,10 @@ Discussing things you care about can be difficult. The threat of abuse and haras
 ## Approaches explored:
 - XGBoost: [Link][3]
 - LightGBM: [Link][4]
+- NBSVM (Baseline) : [Link][5]
 
 [1]: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 [2]: https://conversationai.github.io/
 [3]: ../XGBoost/README.md
 [4]: ../light-gbm/README.md
+[5]: ../baseline/NBSVM.ipynb
