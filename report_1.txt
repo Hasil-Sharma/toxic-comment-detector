@@ -1,0 +1,44 @@
+Running for insult
+[CV]  ................................................................
+[CV]  ................................................................
+[CV]  ................................................................
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+[CV]  , accuracy=0.9738054206485979, roc_auc=0.9816711285151226, neg_log_loss=-0.06877320815870919, total=52.4min
+[CV]  , accuracy=0.974274613022498, roc_auc=0.9814442409241184, neg_log_loss=-0.0670858661017691, total=52.4min
+[Parallel(n_jobs=3)]: Done   2 out of   5 | elapsed: 92.8min remaining: 139.2min
+[CV]  , accuracy=0.9730534231552561, roc_auc=0.9815289219970007, neg_log_loss=-0.07000396401912409, total=52.7min
+[Parallel(n_jobs=3)]: Done   3 out of   5 | elapsed: 92.9min remaining: 61.9min
+[CV]  ................................................................
+[CV]  ................................................................
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+/Users/apple/anaconda/lib/python3.6/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+[CV]  , accuracy=0.9745879551294103, roc_auc=0.9811499578571664, neg_log_loss=-0.06794593194915038, total=26.9min
+[CV]  , accuracy=0.9746498292232005, roc_auc=0.9786302682894416, neg_log_loss=-0.06986501759254744, total=26.9min
+[Parallel(n_jobs=3)]: Done   5 out of   5 | elapsed: 143.2min remaining:    0.0s
+[Parallel(n_jobs=3)]: Done   5 out of   5 | elapsed: 143.2min finished
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-21-c4c15ffe023c> in <module>()
+      2 print ('Running for ' + label)
+      3 cv[label] = cross_validate(light_gbm_pipeline, train[comment_col], train[label], 
+----> 4                            cv = 5, n_jobs = 3, verbose = 10, scoring = ('accuracy', 'roc_auc', 'neg_log_loss'))
+      5 print (cv[label])
+
+NameError: name 'cv' is not defined
