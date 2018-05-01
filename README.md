@@ -15,6 +15,12 @@ Discussing things you care about can be difficult. The threat of abuse and haras
 - LSTM: [Link][7]
 - Bi-Directional LSTM: [Link][8]
 
+## Common Model Parameters:
+- Vocabulary size = 6500
+- Maximum sentence size = 400
+- Embedding Size = 50
+- Make only one model for multi-class classification and not 6 separate models for 6 separate classes
+
 [1]: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 [2]: https://conversationai.github.io/
 [3]: ../XGBOOST/README.md
