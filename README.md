@@ -28,17 +28,19 @@ Discussing things you care about can be difficult. The threat of abuse and haras
 
 ## Results so far:
 
-|                   | Test Set AUC | Std. Dev. | Status               |
-|:-----------------:|--------------|-----------|----------------------|
-| Linear Classifier | 0.9059       | 0.033     |                      |
-| NBSVM (Baseline)  | 0.9199       | ??        | (needs confirmation) |
-| XGBoost           | 0.5          | ??        | (needs confirmation) |
-| LightGBM          | 0.95         | ??        | (needs confirmation) |
-| DNN               | 0.8958       | 0.0756    |                      |
-| CNN               |              |           | (still running)      |
-| CNN PR-EMB        | 0.9104       | 0.0365    |                      |
-| LSTM              |              |           | (still running)      |
-| BD LSTM           | 0.98         | ??        | (needs confirmation) |
+|                   | Test Set AUC | Std. Dev. | Status          | Training Style                                           | Reference                                                                                           |
+|:-----------------:|--------------|-----------|-----------------|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Linear Classifier | 0.9059       | 0.033     | no need!        | Every category trained separately using tfEstimators API | http://ruder.io/text-classification-tensorflow-estimators/                                          |
+| NBSVM (Baseline)  | 0.9199       | 0.005     | DONE! (x3)      | One model trained!                                       | https://github.com/sidaw/nbsvm                                                                      |
+| XGBoost           | --           | --        | code invalid :( | --                                                       | --                                                                                                  |
+| LightGBM          | 0.975        | 0.002     | DONE! (x3)      | --                                                       |                                                                                                     |
+| DNN               | 0.8958       | 0.0756    | DONE!           | every category separately, no point of reporting         | http://ruder.io/text-classification-tensorflow-estimators/                                          |
+| CNN               | 0.8907       | 0.045     | no need!        | every category trained separately                        | http://ruder.io/text-classification-tensorflow-estimators/                                          |
+| CNN               | 0.9514       | 0.0025    | DONE! (x4)      | trained one model                                        | http://ruder.io/text-classification-tensorflow-estimators/                                          |
+| CNN PT            | 0.9104       | 0.0365    | no need!        | every category separately                                | http://ruder.io/text-classification-tensorflow-estimators/                                          |
+| LSTM              | 0.955        | 0.002     | DONE! (x3)      | trained 1 model                                          | http://ruder.io/text-classification-tensorflow-estimators/                                          |
+| LSTM PT           | 0.957        | 0.002     | DONE! (x3)      | trained 1 model                                          |                                                                                                     |
+| BD LSTM           | 0.977        | 0.002     | DONE! (x3)      | trained 1 model                                          | https://machinelearningmastery.com/develop-bidirectional-lstm-sequence-classification-python-keras/ |
 
 
 [1]: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
